@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="box_img">
+                <img id="img"  alt="">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <!--  -->
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="Brightness">Brightness</label>
+                    <input type="range" id="Brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="Sepia">Sepia</label>
+                    <input type="range" id="Sepia" min="0" max="200" value="0">
+                </li>
+                <li>
+                    <label for="GrayScale">GrayScale</label>
+                    <input type="range" id="GrayScale" step="0.1" min="0" max="1" value="100">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="Blur" step="0.1" min="0" max="10" value="100">
+                </li>
+                <li>
+                    <label for="hueRotate">Hue Rotate</label>
+                    <input type="range" id="hueRotate" min="0" max="350" value="0">
+                </li>
+                <li>
+                    <a download="image" id="download"> Download</a>
+                    <span onclick=" restValue()" id="rest">Rest</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="min.js"></script>
+</html>
